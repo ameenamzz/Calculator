@@ -1,5 +1,4 @@
 import java.awt.Color;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -26,7 +25,7 @@ public class Calculator {
 
         //Calculator Button
 
-        //row 1 (7 8 9)
+        //row 1 (7 8 9 /)
         JButton seveButton=new JButton("7");
         seveButton.setBounds(30,130,80,80);
         jf.add(seveButton);
@@ -39,7 +38,11 @@ public class Calculator {
         nineButton.setBounds(230,130,80,80);
         jf.add(nineButton);
 
-         //row 2 (4 5 6)
+        JButton divisionButton=new JButton("/");
+        divisionButton.setBounds(330,130,80,80);
+        jf.add(divisionButton);
+
+         //row 2 (4 5 6 x)
 
         JButton fourButton=new JButton("4");
         fourButton.setBounds(30,230,80,80);
@@ -53,7 +56,11 @@ public class Calculator {
         sixButton.setBounds(230,230,80,80);
         jf.add(sixButton);
 
-        //row 3 (1 2 3)
+        JButton mulButton=new JButton("x");
+        mulButton.setBounds(330,230,80,80);
+        jf.add(mulButton);
+
+        //row 3 (1 2 3 -)
         JButton oneButton=new JButton("1");
         oneButton.setBounds(30,330,80,80);
         jf.add(oneButton);
@@ -66,6 +73,27 @@ public class Calculator {
         threeButton.setBounds(230,330,80,80);
         jf.add(threeButton);
 
+        JButton minusButton=new JButton("-");
+        minusButton.setBounds(330,330,80,80);
+        jf.add(minusButton);
+
+         //row 4 (. 0 = +)
+         JButton dotButton=new JButton(".");
+         dotButton.setBounds(30,430,80,80);
+         jf.add(dotButton);
+ 
+         JButton zeroButton=new JButton("0");
+         zeroButton.setBounds(130,430,80,80);
+         jf.add(zeroButton);
+ 
+         JButton equalButton=new JButton("=");
+         equalButton.setBounds(230,430,80,80);
+         jf.add(equalButton);
+
+         JButton addButton=new JButton("+");
+         addButton.setBounds(330,430,80,80);
+         jf.add(addButton);
+         
 
         
     }
